@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"mq2\startup_stm32f103xb.o"
+"mq2\i2c-lcd.o"
+"mq2\main.o"
+"mq2\stm32f1xx_it.o"
+"mq2\stm32f1xx_hal_msp.o"
+"mq2\stm32f1xx_hal_gpio_ex.o"
+"mq2\stm32f1xx_hal_adc.o"
+"mq2\stm32f1xx_hal_adc_ex.o"
+"mq2\stm32f1xx_hal.o"
+"mq2\stm32f1xx_hal_rcc.o"
+"mq2\stm32f1xx_hal_rcc_ex.o"
+"mq2\stm32f1xx_hal_gpio.o"
+"mq2\stm32f1xx_hal_dma.o"
+"mq2\stm32f1xx_hal_cortex.o"
+"mq2\stm32f1xx_hal_pwr.o"
+"mq2\stm32f1xx_hal_flash.o"
+"mq2\stm32f1xx_hal_flash_ex.o"
+"mq2\stm32f1xx_hal_exti.o"
+"mq2\stm32f1xx_hal_i2c.o"
+"mq2\stm32f1xx_hal_tim.o"
+"mq2\stm32f1xx_hal_tim_ex.o"
+"mq2\system_stm32f1xx.o"
+"mq2\mq2.o"
+--strict --scatter "MQ2\MQ2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MQ2.map" -o MQ2\MQ2.axf
